@@ -1,11 +1,11 @@
 @font-face {
   font-family: Mazzard;
-  src: url(/fonts/MazzardH-Regular.ttf);
+  src: url("/fonts/MazzardH-Regular.ttf");
 }
 
 @font-face {
   font-family: Mazzard-B;
-  src: url(/fonts/MazzardH-SemiBold.ttf);
+  src: url("/fonts/MazzardH-SemiBold.ttf");
 }
 
 * {
@@ -358,7 +358,7 @@ header .mnu_top li a:hover {
 
 .about_more:after {
   content: "";
-  background-image: url(/img/arrow.svg);
+  background-image: url("/img/arrow.svg");
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
@@ -825,7 +825,7 @@ header .mnu_top li a:hover {
     padding: 16px 0;
     width: 53px;
     height: auto;
-    background: url(/img/map.svg) no-repeat center;
+    background: url("/img/map.svg") no-repeat center;
   }
   .btn_white p {
     display: none;
@@ -852,6 +852,7 @@ header .mnu_top li a:hover {
 
 @media screen and (max-width: 768px) {
   .burger-wrap {
+    position: relative;
   }
   .burger {
     /* display: none; */
@@ -859,7 +860,7 @@ header .mnu_top li a:hover {
     top: 0;
     right: 0;
     height: 100%;
-    overflow-y: none;
+    overflow-y: auto;
   }
   .burger-btn {
     display: block;
