@@ -9,7 +9,7 @@ $(document).ready(function() {
 });
 
 const burgerBtn = $('.burger-btn');
-const burgerBtnActive = $('.burger-btn-active');
+// const burgerBtnActive = $('.burger-btn-active');
 
 burgerBtn.on('click', function (event) {
   event.preventDefault();
@@ -22,11 +22,17 @@ burgerBtn.on('click', function (event) {
   }
 });
 
-$(window).scroll(function(){
-  var docscroll=$(document).scrollTop();
-  if(docscroll>$(window).height()){
-    $('burger').css({'height': $('burger').height(),'width': $('burger').width()}).addClass('fixed');
-  }else{
-    $('burger').removeClass('fixed');
-  }
-});
+const searchId = $('.map_about');
+console.log('searchId: ', searchId);
+
+
+
+
+// $(window).scroll(function(){
+//   var docscroll=$(document).scrollTop();
+//   if(docscroll>$(window).height()){
+//     $('burger').css({'height': $('burger').height(),'width': $('burger').width()}).addClass('fixed');
+//   }else{
+//     $('burger').removeClass('fixed');
+//   }
+// });
