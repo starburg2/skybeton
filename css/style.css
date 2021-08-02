@@ -26,7 +26,6 @@ b {
 body {
   background-color: #f7f7f7;
   background-image: url("/img/noizxe.png");
-  /* min-width: 1170px; */
 }
 
 header {
@@ -256,12 +255,15 @@ header .mnu_top li a:hover {
   font-size: 25px;
 }
 
+.span-mobile {
+  display: none;
+}
+
 .one_time {
   font-family: Mazzard;
   font-style: normal;
   font-weight: normal;
   font-size: 25px;
-  /* margin-right: 85px; */
 }
 .vajno {
   margin-top: 40px;
@@ -414,7 +416,9 @@ header .mnu_top li a:hover {
   padding-top: 220px;
   padding-bottom: 40px;
 }
-
+.map-mobile {
+  display: none;
+}
 .block__item {
   border-top: 1px solid #020d22;
   padding: 14px 0;
@@ -555,7 +559,6 @@ header .mnu_top li a:hover {
 .footer_wrapper {
   display: block;
   height: 100%;
-  /* padding-top: 23px; */
 }
 .footer_m {
   font-family: Mazzard;
@@ -659,7 +662,6 @@ header .mnu_top li a:hover {
 
 .info_cnt {
   padding-top: 56px;
-  /* margin-bottom: 60px; */
 }
 
 .main_cnt {
@@ -747,7 +749,7 @@ header .mnu_top li a:hover {
     padding-left: 40px;
   }
   .car img {
-    width: 620px;
+    max-width: 620px;
   }
   .title {
     font-size: 92px;
@@ -771,16 +773,7 @@ header .mnu_top li a:hover {
   .one_time .span_wrapper {
     margin-right: 0;
   }
-  /* .titles:nth-child(1) {
-    padding: 0;
-  }
-  .titles:nth-child(2) {
-    padding-right: 0;
-    margin-left: -170px;
-  } */
   .titles {
-    /* padding-right: 0;
-    margin-left: -170px; */
     padding: 0;
     max-width: 263px;
   }
@@ -864,7 +857,7 @@ header .mnu_top li a:hover {
 
 @media screen and (max-width: 768px) {
   body {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
   .mnu_top {
     display: none;
@@ -877,19 +870,16 @@ header .mnu_top li a:hover {
     position: relative;
   }
   .burger {
-    /* display: none; */
     position: fixed;
     top: 0;
     right: 0;
     height: 100%;
-    /* overflow-y: auto; */
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
   }
   .burger-btn {
     display: block;
-    /* margin-top: 15px; */
     width: 20px;
     height: 20px;
   }
@@ -922,7 +912,6 @@ header .mnu_top li a:hover {
     width: 20px;
     height: 2px;
     z-index: 999;
-    /* transition: 0.5s; */
   }
   .burger_menu {
     position: fixed;
@@ -933,6 +922,7 @@ header .mnu_top li a:hover {
     box-shadow: 10px 10px 40px rgba(41, 68, 104, 0.1);
     height: 100%;
     padding: 72px 0 0 24px;
+    z-index: 99;
   }
   .burger_menu li {
     list-style: none;
@@ -942,8 +932,6 @@ header .mnu_top li a:hover {
     font-family: Mazzard;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
     text-decoration: none;
     font-size: 18px;
     line-height: 21px;
@@ -956,11 +944,6 @@ header .mnu_top li a:hover {
     font-size: 18px;
     line-height: 21px;
     color: #005bff;
-  }
-  .burger-btn.burger-btn-active {
-    /* width: 25px;
-    height: 25px;
-    z-index: 999; */
   }
   .burger-btn.burger-btn-active span {
     position: absolute;
@@ -976,12 +959,6 @@ header .mnu_top li a:hover {
   .burger-btn.burger-btn-active span::after {
     content: none;
   }
-  /* .secod_price-wrap {
-    display: block;
-  } */
-  /* .price-wrap {
-    max-width: 100%;
-  } */
   .num {
     font-size: 56px;
     line-height: 61px;
@@ -993,8 +970,11 @@ header .mnu_top li a:hover {
     font-size: 70px;
     line-height: 83px;
   }
+  .car {
+    /* display: block; */
+  }
   .car img {
-    width: 469px;
+    width: 50%;
   }
   .main .car .car_text span {
     padding: 0 0 8px 25px;
@@ -1100,6 +1080,9 @@ header .mnu_top li a:hover {
     height: 290px;
     margin-left: 12px;
   }
+  #map {
+    overflow-x: hidden;
+  }
   .map {
     align-items: center;
     justify-content: space-between;
@@ -1119,5 +1102,156 @@ header .mnu_top li a:hover {
   .last {
     font-size: 26px;
     line-height: 31px;
+  }
+}
+@media screen and (max-width: 550px) {
+  header .ul_wrapper .btn {
+    display: none;
+  }
+  .subtitle {
+    font-size: 28px;
+    line-height: 33px;
+  }
+  .title {
+    font-size: 28px;
+    line-height: 33px;
+  }
+  .car {
+    display: block;
+  }
+  .car img {
+    width: 100%;
+  }
+  .car_text {
+    padding-top: 24px;
+  }
+  .block_wrapper {
+    display: block;
+    padding-top: 27px;
+  }
+  .btn1 .btn {
+    margin-left: 0;
+  }
+  .block {
+    width: auto;
+    margin-top: 16px;
+  }
+  .text {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .price_name {
+    padding-top: 120px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .price_titles {
+    margin-top: 24px;
+  }
+  .mobile-titles,
+  .one_time {
+    display: none;
+  }
+  .titles {
+    font-size: 15px;
+    line-height: 18px;
+    width: auto;
+  }
+  .span_wrapper {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .span_wrapper .num {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .map {
+    display: block;
+  }
+  .span-mobile {
+    display: block;
+    font-size: 14px;
+    line-height: 17px;
+    color: #898989;
+    padding: 4px 0 16px;
+  }
+  .metrs .span_wrapper:not(:first-child) {
+    padding-top: 36px;
+  }
+  .price_wrapper {
+    align-items: flex-start;
+  }
+  .b {
+    display: grid;
+  }
+  .second_price {
+    margin-top: 64px;
+  }
+  .secod_price-wrap {
+    display: block;
+  }
+  .price-wrap {
+    max-width: 100%;
+    padding-bottom: 20px;
+  }
+  .num {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .text_and_img {
+    flex-direction: column;
+  }
+  .img img {
+    transform: rotate(90deg);
+    width: 100%;
+  }
+  .faq_name {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .block__title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .call_text_b {
+    margin-bottom: 20px;
+  }
+  .map-mobile,
+  .ymaps-2-1-79-map.ymaps-2-1-79-i-ua_js_yes.ymaps-2-1-79-map-bg.ymaps-2-1-79-islets_map-lang-ru,
+  .ymaps-2-1-79-map {
+    width: 100% !important;
+    height: 219px !important;
+  }
+  .map-mobile {
+    margin: 24px 0 16px;
+    padding: 24px 0 16px;
+  }
+  .call_text_b {
+    margin-bottom: 16px;
+  }
+  .map-mobile {
+    display: block;
+  }
+  .map_about {
+    display: none;
+  }
+  .bnt_wrapper .btn_text {
+    width: 60%;
+  }
+  .footer {
+    margin-top: 120px;
+    flex-direction: column;
+    height: auto;
+  }
+  .footer_border {
+    border: none;
+    padding: 0;
+  }
+  .footer_wrapper {
+    width: 100%;
+    border-bottom: 1px solid #000;
+  }
+  .footer_wrapper-mobile {
+    border-bottom: none;
   }
 }
