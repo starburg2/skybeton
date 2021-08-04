@@ -22,10 +22,6 @@ burgerBtn.on('click', function (event) {
   }
 });
 
-const searchId = $('.map_about');
-console.log('searchId: ', searchId);
-
-
 
 
 // $(window).scroll(function(){
