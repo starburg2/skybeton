@@ -643,8 +643,12 @@ header .mnu_top li a:hover {
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
-  color: #005bff;
+
   padding-top: 8px;
+}
+
+.call_contacts_b_text {
+  color: #005bff;
 }
 
 .contacts_black {
@@ -734,6 +738,46 @@ header .mnu_top li a:hover {
 }
 .block__title.active {
   font-weight: 600;
+}
+/* page - characteristics; */
+
+.photo {
+  font-family: Mazzard;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  padding-bottom: 16px;
+}
+.photo_div span,
+img {
+  display: block;
+}
+
+.photo_div {
+  margin-bottom: 48px;
+}
+.photo_div-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+.photo_space {
+  padding-bottom: 16px;
+}
+.photo_predlast {
+  padding-right: 54px;
+}
+.photo_last {
+  padding-right: 188px;
+}
+
+.text_chara {
+  font-family: Mazzard;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
 }
 @media screen and (max-width: 1024px) {
   .container {
