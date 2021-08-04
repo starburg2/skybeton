@@ -40,7 +40,7 @@ burgerBtn.on('click', function (event) {
   if (!$(this).hasClass('burger-btn-active')) {
     $(this).siblings().removeClass('burger-btn-active');
     $(this).addClass('burger-btn-active');
-    desableScroll()ж
+    desableScroll();
   } else {
     $(this).removeClass('burger-btn-active');
     $('.burger').hide('slow');
