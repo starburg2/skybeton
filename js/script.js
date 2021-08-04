@@ -9,26 +9,51 @@ $(document).ready(function() {
 });
 
 const burgerBtn = $('.burger-btn');
-// const burgerBtnActive = $('.burger-btn-active');
+const burgerBackground = $('.burger');
+
+const desableScroll = () => {
+  const widthScroll = window.innerWidth - document.body.offsetWidth;
+
+  document.body.dbScrollY = window.scrollY;
+
+  document.body.style.cssText = `
+    position: fixed;
+    top: ${-window.scrollY}px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding-right: ${widthScroll}px;
+  `;
+};
+
+const enableScroll = () => {
+  document.body.style.cssText = '';
+  window.scroll({
+    top: document.body.dbScrollY
+  })
+};
 
 burgerBtn.on('click', function (event) {
   event.preventDefault();
-  $('.burger').slideToggle();
+  $('.burger').show('slow');
   if (!$(this).hasClass('burger-btn-active')) {
     $(this).siblings().removeClass('burger-btn-active');
     $(this).addClass('burger-btn-active');
+    desableScroll()ж
   } else {
     $(this).removeClass('burger-btn-active');
+    $('.burger').hide('slow');
+    enableScroll();
   }
 });
 
+burgerBackground.on('click', event => {
+  const target = event.target;
+  console.log('target: ', target);
 
-
-// $(window).scroll(function(){
-//   var docscroll=$(document).scrollTop();
-//   if(docscroll>$(window).height()){
-//     $('burger').css({'height': $('burger').height(),'width': $('burger').width()}).addClass('fixed');
-//   }else{
-//     $('burger').removeClass('fixed');
-//   }
-// });
+  if (target.matches('.burger')) {
+    $(burgerBtn).removeClass('burger-btn-active');
+    $('.burger').hide('slow');
+  }
+});

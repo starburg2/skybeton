@@ -488,9 +488,7 @@ header .mnu_top li a:hover {
   font-weight: normal;
   font-size: 18px;
   line-height: 28px;
-
   max-width: 567px;
-  height: 84px;
 }
 
 .call_text_b {
@@ -1247,7 +1245,10 @@ img {
   }
   .img img {
     transform: rotate(90deg);
-    width: 100%;
+    width: 90%;
+  }
+  .read_arrow {
+    width: 94%;
   }
   .faq_name {
     font-size: 32px;
