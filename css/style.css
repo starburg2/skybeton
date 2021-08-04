@@ -1,11 +1,11 @@
 @font-face {
   font-family: Mazzard;
-  src: url("/fonts/MazzardH-Regular.ttf");
+  src: url("../fonts/MazzardH-Regular.ttf");
 }
 
 @font-face {
   font-family: Mazzard-B;
-  src: url("/fonts/MazzardH-SemiBold.ttf");
+  src: url("../fonts/MazzardH-SemiBold.ttf");
 }
 
 * {
@@ -216,11 +216,11 @@ header .mnu_top li a:hover {
 }
 
 .titles:nth-child(1) {
-  padding-right: 228px;
+  padding-right: 198px;
 }
 
 .titles:nth-child(2) {
-  padding-right: 208px;
+  padding-right: 234px;
 }
 .price_wrapper {
   display: flex;
@@ -1071,7 +1071,7 @@ img {
   }
   .price {
     display: block;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 19px;
   }
   .price_name {
@@ -1197,16 +1197,16 @@ img {
     display: none;
   }
   .titles {
-    font-size: 15px;
+    font-size: 17px;
     line-height: 18px;
     width: auto;
   }
   .span_wrapper {
-    font-size: 14px;
+    font-size: 20px;
     line-height: 17px;
   }
   .span_wrapper .num {
-    font-size: 24px;
+    font-size: 28px;
     line-height: 26px;
   }
   .map {
@@ -1214,7 +1214,7 @@ img {
   }
   .span-mobile {
     display: block;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 17px;
     color: #898989;
     padding: 4px 0 16px;
@@ -1239,8 +1239,8 @@ img {
     padding-bottom: 20px;
   }
   .num {
-    font-size: 24px;
-    line-height: 26px;
+    font-size: 36px;
+    line-height: 48px;
   }
   .text_and_img {
     flex-direction: column;
