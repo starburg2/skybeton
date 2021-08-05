@@ -510,13 +510,14 @@ header .mnu_top li a:hover {
 }
 
 .bnt_wrapper {
+  margin-top: 26px;
   display: flex;
 }
 .btn_text {
+  display: block;
   color: #fcfcfd;
   background: #005bff;
   font-size: 18px;
-  margin-top: 26px;
   text-decoration: none;
   padding: 16px 70px;
   font-family: Mazzard;
@@ -542,7 +543,6 @@ header .mnu_top li a:hover {
   font-family: Mazzard;
   text-decoration: none;
   margin-left: 16px;
-  margin-top: 26px;
 }
 
 .footer {
@@ -869,6 +869,7 @@ img {
   }
 
   .btn_white {
+    display: block;
     padding: 16px 0;
     width: 53px;
     height: auto;
@@ -1249,6 +1250,9 @@ img {
   }
   .read_arrow {
     width: 94%;
+  }
+  .main .car .car_text span {
+    padding-left: 0;
   }
   .faq_name {
     font-size: 32px;
