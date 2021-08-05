@@ -245,14 +245,14 @@ header .mnu_top li a:hover {
   font-family: Archivo;
   font-style: normal;
   font-weight: normal;
-  font-size: 92px;
+  font-size: 91px;
 }
 
 .price {
   font-family: Mazzard;
   font-style: normal;
   font-weight: normal;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .span-mobile {
@@ -335,7 +335,7 @@ header .mnu_top li a:hover {
 
 .about_wigth {
   max-width: 474px;
-  padding-left: 16px;
+  padding-left: 54px;
 }
 
 .about_block {
@@ -344,7 +344,7 @@ header .mnu_top li a:hover {
 
 .about_wigth_2 {
   max-width: 474px;
-  padding-left: 44px;
+  padding-left: 24px;
 }
 
 .text_and_img {
@@ -473,7 +473,7 @@ header .mnu_top li a:hover {
   font-family: Mazzard;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
   display: none;
   padding: 16px 0 8px 0;
@@ -1059,7 +1059,7 @@ img {
     line-height: 28px;
   }
   .span_b {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 28px;
   }
   .second_price {
@@ -1136,8 +1136,8 @@ img {
     line-height: 19px;
   }
   .footer_b {
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 46px;
+    line-height: 60px;
   }
   .last {
     font-size: 26px;
@@ -1236,9 +1236,9 @@ img {
   .price_wrapper {
     align-items: flex-start;
   }
-  .b {
+  /* .b {
     display: grid;
-  }
+  } */
   .second_price {
     margin-top: 64px;
   }
