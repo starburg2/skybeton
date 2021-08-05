@@ -1011,23 +1011,20 @@ img {
     padding-top: 35px;
   }
   .title {
-    font-size: 50px;
-    line-height: 83px;
+    font-size: 64px;
   }
-  .car {
-    /* display: block; */
-  }
+
   .car img {
-    width: 50%;
+    width: 60%;
   }
   .main .car .car_text span {
-    padding: 0 0 8px 25px;
-    font-size: 16px;
+    padding: 0 0 8px 32px;
+    font-size: 18px;
     line-height: 32px;
   }
   .btn1 .btn {
     font-size: 20px;
-    margin-left: 25px;
+    margin-left: 38px;
   }
   .figure {
     font-size: 56px;
@@ -1043,7 +1040,7 @@ img {
     line-height: 47px;
   }
   .titles {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 19px;
     width: 202px;
   }
@@ -1079,13 +1076,13 @@ img {
   }
   .about_text {
     display: block;
-    padding-top: 40px;
+    padding-top: 32px;
   }
   .text_b {
     display: block;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 28px;
-    padding-bottom: 8px;
+    padding-bottom: 4px;
   }
   .about_wigth,
   .about_wigth_2 {
@@ -1095,7 +1092,7 @@ img {
   }
   .text_n {
     font-size: 16px;
-    line-height: 28px;
+    line-height: 24px;
   }
   .img img {
     width: 290px;
@@ -1147,17 +1144,28 @@ img {
     font-size: 26px;
     line-height: 31px;
   }
+  .footer_border {
+    border-left: 1px solid #020d22;
+    border-right: 1px solid #020d22;
+    padding: 0 18px;
+  }
+  .car {
+    padding-top: 0px;
+  }
+  .block {
+    margin-top: 32px;
+  }
 }
 @media screen and (max-width: 550px) {
   header .ul_wrapper .btn {
     display: none;
   }
   .subtitle {
-    font-size: 28px;
-    line-height: 33px;
+    font-size: 32px;
+    line-height: 42px;
   }
   .title {
-    font-size: 28px;
+    font-size: 32px;
     line-height: 33px;
   }
   .car {
@@ -1200,6 +1208,7 @@ img {
     font-size: 17px;
     line-height: 18px;
     width: auto;
+    font-weight: 600;
   }
   .span_wrapper {
     font-size: 20px;
