@@ -52,8 +52,9 @@ burgerBackground.on('click', event => {
   const target = event.target;
   console.log('target: ', target);
 
-  if (target.matches('.burger')) {
+  if (target.matches('.nav-burger')) {
     $(burgerBtn).removeClass('burger-btn-active');
     $('.burger').hide('slow');
+    enableScroll();
   }
 });
