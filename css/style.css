@@ -245,14 +245,14 @@ header .mnu_top li a:hover {
   font-family: Archivo;
   font-style: normal;
   font-weight: normal;
-  font-size: 92px;
+  font-size: 91px;
 }
 
 .price {
   font-family: Mazzard;
   font-style: normal;
   font-weight: normal;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .span-mobile {
@@ -335,7 +335,7 @@ header .mnu_top li a:hover {
 
 .about_wigth {
   max-width: 474px;
-  padding-left: 16px;
+  padding-left: 54px;
 }
 
 .about_block {
@@ -344,7 +344,7 @@ header .mnu_top li a:hover {
 
 .about_wigth_2 {
   max-width: 474px;
-  padding-left: 44px;
+  padding-left: 24px;
 }
 
 .text_and_img {
@@ -355,6 +355,7 @@ header .mnu_top li a:hover {
 }
 
 .about_more {
+  display: block;
   margin-top: 64px;
   border-bottom: 1px solid #020d22;
   padding: 14px 0;
@@ -462,6 +463,10 @@ header .mnu_top li a:hover {
   right: 6.5px;
 }
 
+#map {
+  width: auto;
+}
+
 .block__title.active::before {
   transform: rotate(40deg);
 }
@@ -473,7 +478,7 @@ header .mnu_top li a:hover {
   font-family: Mazzard;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
   display: none;
   padding: 16px 0 8px 0;
@@ -848,7 +853,7 @@ img {
   }
 
   .footer_b {
-    font-size: 44px;
+    font-size: 43px;
   }
 
   .last {
@@ -1011,7 +1016,7 @@ img {
     padding: 10px 46px;
     position: absolute;
     bottom: 24px;
-    right: calc(100% - 224px);
+    right: 34px;
     z-index: 99;
     font-weight: normal;
     display: block;
@@ -1029,23 +1034,20 @@ img {
     padding-top: 35px;
   }
   .title {
-    font-size: 50px;
-    line-height: 83px;
+    font-size: 64px;
   }
-  .car {
-    /* display: block; */
-  }
+
   .car img {
-    width: 50%;
+    width: 60%;
   }
   .main .car .car_text span {
-    padding: 0 0 8px 25px;
-    font-size: 16px;
+    padding: 0 0 8px 32px;
+    font-size: 18px;
     line-height: 32px;
   }
   .btn1 .btn {
     font-size: 20px;
-    margin-left: 25px;
+    margin-left: 38px;
   }
   .figure {
     font-size: 56px;
@@ -1061,7 +1063,7 @@ img {
     line-height: 47px;
   }
   .titles {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 19px;
     width: 202px;
   }
@@ -1081,7 +1083,7 @@ img {
     line-height: 28px;
   }
   .span_b {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 28px;
   }
   .second_price {
@@ -1089,7 +1091,7 @@ img {
   }
   .price {
     display: block;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 19px;
   }
   .price_name {
@@ -1097,13 +1099,13 @@ img {
   }
   .about_text {
     display: block;
-    padding-top: 40px;
+    padding-top: 32px;
   }
   .text_b {
     display: block;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 28px;
-    padding-bottom: 8px;
+    padding-bottom: 4px;
   }
   .about_wigth,
   .about_wigth_2 {
@@ -1113,7 +1115,7 @@ img {
   }
   .text_n {
     font-size: 16px;
-    line-height: 28px;
+    line-height: 24px;
   }
   .img img {
     width: 290px;
@@ -1158,12 +1160,23 @@ img {
     line-height: 19px;
   }
   .footer_b {
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 33px;
+    line-height: 60px;
   }
   .last {
     font-size: 26px;
     line-height: 31px;
+  }
+  .footer_border {
+    border-left: 1px solid #020d22;
+    border-right: 1px solid #020d22;
+    padding: 0 18px;
+  }
+  .car {
+    padding-top: 0px;
+  }
+  .block {
+    margin-top: 32px;
   }
 }
 @media screen and (max-width: 550px) {
@@ -1171,11 +1184,11 @@ img {
     display: none;
   }
   .subtitle {
-    font-size: 28px;
-    line-height: 33px;
+    font-size: 32px;
+    line-height: 42px;
   }
   .title {
-    font-size: 28px;
+    font-size: 32px;
     line-height: 33px;
   }
   .car {
@@ -1214,10 +1227,14 @@ img {
   .one_time {
     display: none;
   }
+  .price_titles {
+    padding-right: 5px;
+  }
   .titles {
     font-size: 17px;
     line-height: 18px;
     width: auto;
+    font-weight: 600;
   }
   .span_wrapper {
     font-size: 20px;
@@ -1238,13 +1255,10 @@ img {
     padding: 4px 0 16px;
   }
   .metrs .span_wrapper:not(:first-child) {
-    padding-top: 36px;
+    padding-top: 37px;
   }
   .price_wrapper {
     align-items: flex-start;
-  }
-  .b {
-    display: grid;
   }
   .second_price {
     margin-top: 64px;
@@ -1266,12 +1280,19 @@ img {
   .img img {
     transform: rotate(90deg);
     width: 90%;
+    height: auto;
   }
   .read_arrow {
     width: 94%;
   }
   .main .car .car_text span {
     padding-left: 0;
+  }
+  .about_more {
+    width: 100%;
+  }
+  .about_more:after {
+    right: 0;
   }
   .faq_name {
     font-size: 32px;
@@ -1303,8 +1324,12 @@ img {
   .map_about {
     display: none;
   }
+  .bnt_wrapper {
+    justify-content: center;
+  }
   .bnt_wrapper .btn_text {
-    width: 60%;
+    width: 54%;
+    padding: 16px 30px;
   }
   .footer {
     margin-top: 120px;
@@ -1321,5 +1346,20 @@ img {
   }
   .footer_wrapper-mobile {
     border-bottom: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .about_more {
+    font-size: 14px;
+  }
+  .about_more:after {
+    height: 47px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .title {
+    font-size: 28px;
+    line-height: 33px;
   }
 }
