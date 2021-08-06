@@ -11,12 +11,13 @@
 * {
   margin: 0px;
   padding: 0px;
+  outline: none;
 }
-* p,
+/* * p,
 span,
 b {
   color: #020d22;
-}
+} */
 
 .container {
   margin: 0 auto;
@@ -215,23 +216,36 @@ header .mnu_top li a:hover {
   margin-bottom: 16px;
 }
 
-.titles:nth-child(1) {
+/* .titles:nth-child(1) {
   padding-right: 198px;
 }
 
 .titles:nth-child(2) {
   padding-right: 234px;
-}
+} */
 .price_wrapper {
+  margin-top: 56px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+
+.price_wrapper::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #020d22;
 }
 
 .span_wrapper {
   display: block;
 }
 .one_time .span_wrapper {
-  margin-right: 111px;
+  /* margin-right: 111px; */
 }
 
 .metrs {
@@ -239,7 +253,7 @@ header .mnu_top li a:hover {
   font-style: normal;
   font-weight: normal;
   font-size: 25px;
-  margin-right: 188px;
+  /* margin-right: 188px; */
 }
 .num {
   font-family: Archivo;
@@ -360,7 +374,7 @@ header .mnu_top li a:hover {
   border-bottom: 1px solid #020d22;
   padding: 14px 0;
   border-top: 1px solid #020d22;
-  width: 90%;
+  width: 100%;
   position: relative;
 }
 
@@ -370,7 +384,7 @@ header .mnu_top li a:hover {
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
-  right: -74px;
+  right: 0;
   top: -1px;
   background-color: #020d22;
   width: 74px;
@@ -463,8 +477,8 @@ header .mnu_top li a:hover {
   right: 6.5px;
 }
 
-#map {
-  width: auto;
+.map_about-tablet {
+  display: none;
 }
 
 .block__title.active::before {
@@ -782,10 +796,13 @@ img {
   font-weight: 500;
   font-size: 24px;
 }
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 1100px) {
   .container {
     padding: 0 16px;
   }
+}
+@media screen and (max-width: 1024px) {
   .header_wrapper {
     max-width: 1024px;
   }
@@ -871,8 +888,12 @@ img {
   .map_about {
     padding-left: 0;
     margin-top: 188px;
+    display: none;
   }
-
+  .map_about-tablet {
+    display: block;
+    margin-top: 180px;
+  }
   .btn_white {
     display: block;
     padding: 16px 0;
@@ -886,12 +907,7 @@ img {
   .map_contacts {
     right: 0;
   }
-  .ymaps-2-1-79-map.ymaps-2-1-79-i-ua_js_yes.ymaps-2-1-79-map-bg.ymaps-2-1-79-islets_map-lang-ru,
-  .ymaps-2-1-79-map,
-  #ymaps1627656473127809764 {
-    width: 400px !important;
-    height: 400px !important;
-  }
+
   .call_contacts_b {
     font-size: 28px;
   }
@@ -900,6 +916,15 @@ img {
   }
   .subtitle_contants {
     width: 70%;
+  }
+  .call_text {
+    max-width: 500px;
+  }
+  .faq_name {
+    padding-bottom: 24px;
+  }
+  .call_text_b {
+    padding-top: 32px;
   }
 }
 
@@ -916,6 +941,7 @@ img {
   }
   .burger-wrap {
     position: relative;
+    padding-top: 4px;
   }
   .burger {
     position: fixed;
@@ -1144,6 +1170,9 @@ img {
     height: 290px;
     margin-left: 12px;
   }
+  .price_wrapper::after {
+    top: 30px;
+  }
   #map {
     overflow-x: hidden;
   }
@@ -1180,6 +1209,9 @@ img {
   }
 }
 @media screen and (max-width: 550px) {
+  .map_about-tablet {
+    display: none;
+  }
   header .ul_wrapper .btn {
     display: none;
   }
@@ -1255,7 +1287,7 @@ img {
     padding: 4px 0 16px;
   }
   .metrs .span_wrapper:not(:first-child) {
-    padding-top: 37px;
+    padding: 17px 0 34px;
   }
   .price_wrapper {
     align-items: flex-start;
@@ -1335,6 +1367,9 @@ img {
     margin-top: 120px;
     flex-direction: column;
     height: auto;
+  }
+  .time_price-mobile {
+    padding-top: 15px;
   }
   .footer_border {
     border: none;
