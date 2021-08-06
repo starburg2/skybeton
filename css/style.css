@@ -355,6 +355,7 @@ header .mnu_top li a:hover {
 }
 
 .about_more {
+  display: block;
   margin-top: 64px;
   border-bottom: 1px solid #020d22;
   padding: 14px 0;
@@ -460,6 +461,10 @@ header .mnu_top li a:hover {
   content: "";
   transform: rotate(40deg);
   right: 6.5px;
+}
+
+#map {
+  width: auto;
 }
 
 .block__title.active::before {
@@ -916,7 +921,7 @@ img {
     position: fixed;
     top: 0;
     right: 0;
-    height: 100%;
+    z-index: 99;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
@@ -1001,6 +1006,25 @@ img {
   }
   .burger-btn.burger-btn-active span::after {
     content: none;
+  }
+  .nav-burger {
+    position: relative;
+    height: 100%;
+  }
+  .burger-menu-tel {
+    text-decoration: none;
+    padding: 10px 46px;
+    position: absolute;
+    bottom: 24px;
+    right: 34px;
+    z-index: 99;
+    font-weight: normal;
+    display: block;
+    background: #005bff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fcfcfd;
   }
   .num {
     font-size: 56px;
@@ -1136,7 +1160,7 @@ img {
     line-height: 19px;
   }
   .footer_b {
-    font-size: 46px;
+    font-size: 33px;
     line-height: 60px;
   }
   .last {
@@ -1236,9 +1260,6 @@ img {
   .price_wrapper {
     align-items: flex-start;
   }
-  /* .b {
-    display: grid;
-  } */
   .second_price {
     margin-top: 64px;
   }
@@ -1259,12 +1280,19 @@ img {
   .img img {
     transform: rotate(90deg);
     width: 90%;
+    height: auto;
   }
   .read_arrow {
     width: 94%;
   }
   .main .car .car_text span {
     padding-left: 0;
+  }
+  .about_more {
+    width: 100%;
+  }
+  .about_more:after {
+    right: 0;
   }
   .faq_name {
     font-size: 32px;
@@ -1296,8 +1324,12 @@ img {
   .map_about {
     display: none;
   }
+  .bnt_wrapper {
+    justify-content: center;
+  }
   .bnt_wrapper .btn_text {
-    width: 60%;
+    width: 54%;
+    padding: 16px 30px;
   }
   .footer {
     margin-top: 120px;
@@ -1317,6 +1349,14 @@ img {
   }
 }
 
+@media screen and (max-width: 350px) {
+  .about_more {
+    font-size: 14px;
+  }
+  .about_more:after {
+    height: 47px;
+  }
+}
 @media screen and (max-width: 330px) {
   .title {
     font-size: 28px;
