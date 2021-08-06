@@ -319,6 +319,12 @@ header .mnu_top li a:hover {
   font-size: 30px;
 }
 
+.kek {
+  padding-left: 40px;
+}
+.kek1 {
+  padding-left: 64px;
+}
 .arrow {
   border-bottom: 1px solid #020d22;
   margin-bottom: 8px;
@@ -626,9 +632,10 @@ header .mnu_top li a:hover {
   font-family: Mazzard;
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 56px;
   line-height: 47px;
   padding-top: 156px;
+  padding-bottom: 16px;
 }
 
 .contancts {
@@ -729,15 +736,20 @@ header .mnu_top li a:hover {
   font-size: 18px;
   line-height: 26px;
 }
-
+.kek2 {
+  width: 100%;
+}
 .text_one_about {
   display: block;
 }
-
+.ee {
+  padding-bottom: 0;
+}
 .text_png {
   display: flex;
   border-bottom: 1px solid #000;
   padding-bottom: 60px;
+  padding-top: 40px;
 }
 .price-wrap {
   max-width: 30%;
@@ -755,6 +767,9 @@ header .mnu_top li a:hover {
 }
 .block__title.active {
   font-weight: 600;
+}
+.qqq {
+  
 }
 /* page - characteristics; */
 
@@ -813,7 +828,7 @@ img {
     padding-left: 40px;
   }
   .car img {
-    max-width: 620px;
+    max-width: 480px;
   }
   .title {
     font-size: 92px;
@@ -931,6 +946,13 @@ img {
 @media screen and (max-width: 768px) {
   body {
     /* overflow-x: hidden; */
+  }
+  .title_price {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  .price_wrapper {
+    margin-top: 16px;
   }
   .mnu_top {
     display: none;
@@ -1051,6 +1073,7 @@ img {
     font-size: 18px;
     line-height: 21px;
     color: #fcfcfd;
+    font-weight: 500;
   }
   .num {
     font-size: 56px;
@@ -1117,7 +1140,7 @@ img {
   }
   .price {
     display: block;
-    font-size: 17px;
+    font-size: 14px;
     line-height: 19px;
   }
   .price_name {
@@ -1186,10 +1209,10 @@ img {
   }
   .footer_m {
     font-size: 16px;
-    line-height: 19px;
+    line-height: 16px;
   }
   .footer_b {
-    font-size: 33px;
+    font-size: 35px;
     line-height: 60px;
   }
   .last {
@@ -1199,7 +1222,7 @@ img {
   .footer_border {
     border-left: 1px solid #020d22;
     border-right: 1px solid #020d22;
-    padding: 0 18px;
+    padding: 0 9px;
   }
   .car {
     padding-top: 0px;
@@ -1208,6 +1231,12 @@ img {
     margin-top: 32px;
   }
 }
+@media screen and (max-width: 550px) {
+  .price {
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .map_about-tablet {
     display: none;
@@ -1222,6 +1251,9 @@ img {
   .title {
     font-size: 32px;
     line-height: 33px;
+  }
+  .footer_b {
+    font-size: 40px;
   }
   .car {
     display: block;
@@ -1309,6 +1341,7 @@ img {
   .text_and_img {
     flex-direction: column;
   }
+
   .img img {
     transform: rotate(90deg);
     width: 90%;
@@ -1382,6 +1415,7 @@ img {
   .footer_wrapper-mobile {
     border-bottom: none;
   }
+  .
 }
 
 @media screen and (max-width: 350px) {
@@ -1396,5 +1430,8 @@ img {
   .title {
     font-size: 28px;
     line-height: 33px;
+  }
+  .titles {
+    font-size: 15px;
   }
 }
