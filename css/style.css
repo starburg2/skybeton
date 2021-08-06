@@ -796,10 +796,13 @@ img {
   font-weight: 500;
   font-size: 24px;
 }
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 1100px) {
   .container {
     padding: 0 16px;
   }
+}
+@media screen and (max-width: 1024px) {
   .header_wrapper {
     max-width: 1024px;
   }
@@ -938,6 +941,7 @@ img {
   }
   .burger-wrap {
     position: relative;
+    padding-top: 4px;
   }
   .burger {
     position: fixed;
@@ -1166,6 +1170,9 @@ img {
     height: 290px;
     margin-left: 12px;
   }
+  .price_wrapper::after {
+    top: 30px;
+  }
   #map {
     overflow-x: hidden;
   }
@@ -1202,6 +1209,9 @@ img {
   }
 }
 @media screen and (max-width: 550px) {
+  .map_about-tablet {
+    display: none;
+  }
   header .ul_wrapper .btn {
     display: none;
   }
@@ -1277,7 +1287,7 @@ img {
     padding: 4px 0 16px;
   }
   .metrs .span_wrapper:not(:first-child) {
-    padding-top: 37px;
+    padding: 17px 0 34px;
   }
   .price_wrapper {
     align-items: flex-start;
@@ -1357,6 +1367,9 @@ img {
     margin-top: 120px;
     flex-direction: column;
     height: auto;
+  }
+  .time_price-mobile {
+    padding-top: 15px;
   }
   .footer_border {
     border: none;
