@@ -768,8 +768,14 @@ header .mnu_top li a:hover {
 .block__title.active {
   font-weight: 600;
 }
-.qqq {
-  
+.qqq::before {
+  content: "●";
+  color: #005bff;
+  font-size: 18px;
+  margin-right: 8px;
+  padding-left: 4px;
+}
+
 }
 /* page - characteristics; */
 
