@@ -197,7 +197,7 @@ header .mnu_top li a:hover {
   font-weight: 600;
   font-size: 55px;
   line-height: 65px;
-  padding-top: 248px;
+  padding-top: 200px;
 }
 
 .price_titles {
@@ -434,7 +434,7 @@ header .mnu_top li a:hover {
   font-weight: 600;
   font-size: 55px;
   max-width: 573px;
-  padding-top: 220px;
+  padding-top: 200px;
   padding-bottom: 40px;
 }
 .map-mobile {
@@ -910,6 +910,7 @@ img {
     margin-top: 188px;
     display: none;
   }
+
   .map_about-tablet {
     display: block;
     margin-top: 180px;
@@ -946,6 +947,9 @@ img {
   .call_text_b {
     padding-top: 32px;
   }
+  .text_price {
+    font-size: 17px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -955,6 +959,12 @@ img {
   .title_price {
     width: 100%;
     padding-bottom: 40px;
+  }
+  .main_cnt {
+    display: block;
+  }
+  .contancts {
+    width: 100%;
   }
   .price_wrapper {
     margin-top: 16px;
@@ -1240,11 +1250,24 @@ img {
   .price {
     font-size: 16px;
   }
+  .text_png {
+    display: block;
+    padding-top: 0;
+  }
+  .abt_wrapper {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 550px) {
   .map_about-tablet {
     display: none;
+  }
+
+  .subtitle_contants {
+    font-size: 40px;
+    padding-top: 104px;
+    padding-bottom: 0;
   }
   header .ul_wrapper .btn {
     display: none;
@@ -1323,6 +1346,12 @@ img {
     color: #898989;
     padding: 4px 0 16px;
   }
+  .subtitle_contants {
+    font-size: 32px;
+  }
+  .text_price {
+    font-size: 16px;
+  }
   .metrs .span_wrapper:not(:first-child) {
     padding: 17px 0 34px;
   }
@@ -1342,6 +1371,12 @@ img {
   .num {
     font-size: 36px;
     line-height: 48px;
+  }
+  .photo_div,
+  span,
+  img {
+    width: 60%;
+    height: 60%;
   }
   .text_and_img {
     flex-direction: column;
@@ -1364,12 +1399,18 @@ img {
   .about_more:after {
     right: 0;
   }
+  .call_text {
+    font-size: 16px;
+  }
   .faq_name {
     font-size: 32px;
     line-height: 38px;
   }
+  .about_more {
+    font-size: 17px;
+  }
   .block__title {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 19px;
   }
   .call_text_b {
@@ -1399,7 +1440,7 @@ img {
   }
   .bnt_wrapper .btn_text {
     width: 54%;
-    padding: 16px 30px;
+    padding: 16px 43px;
   }
   .footer {
     margin-top: 120px;
