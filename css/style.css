@@ -726,7 +726,7 @@ header .mnu_top li a:hover {
 
 .abt_wrapper {
   padding-top: 24px;
-  width: 90%;
+  max-width: 620px;
 }
 
 .abt_text {
@@ -747,6 +747,8 @@ header .mnu_top li a:hover {
 }
 .text_png {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   border-bottom: 1px solid #000;
   padding-bottom: 60px;
   padding-top: 40px;
@@ -817,6 +819,10 @@ img {
   font-size: 24px;
 }
 
+.map_about-small {
+  display: none;
+}
+
 @media screen and (max-width: 1100px) {
   .container {
     padding: 0 16px;
@@ -836,7 +842,7 @@ img {
     max-width: 480px;
   }
   .title {
-    font-size: 92px;
+    font-size: 70px;
   }
   .block {
     width: 28%;
@@ -914,6 +920,13 @@ img {
   .map_about-tablet {
     display: block;
     margin-top: 180px;
+  }
+  header .ul_wrapper .btn {
+    font-size: 14px;
+    margin-left: 14px;
+  }
+  .logo {
+    padding-top: 0;
   }
   .btn_white {
     display: block;
@@ -1245,6 +1258,13 @@ img {
   .block {
     margin-top: 32px;
   }
+  .map_about-tablet {
+    display: none;
+  }
+  .map_about-small {
+    display: block;
+    margin-top: 70px;
+  }
 }
 @media screen and (max-width: 550px) {
   .price {
@@ -1425,6 +1445,10 @@ img {
   .map-mobile {
     margin: 24px 0 16px;
     padding: 24px 0 16px;
+  }
+
+  .map_about-small {
+    display: none;
   }
   .call_text_b {
     margin-bottom: 16px;
