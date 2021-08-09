@@ -323,7 +323,7 @@ header .mnu_top li a:hover {
   padding-left: 40px;
 }
 .kek1 {
-  padding-left: 64px;
+  padding-left: 40px;
 }
 .arrow {
   border-bottom: 1px solid #020d22;
@@ -750,8 +750,8 @@ header .mnu_top li a:hover {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #000;
-  padding-bottom: 60px;
-  padding-top: 40px;
+  padding-bottom: 24px;
+  padding-top: 24px;
 }
 .price-wrap {
   max-width: 30%;
@@ -958,7 +958,7 @@ img {
     padding-bottom: 24px;
   }
   .call_text_b {
-    padding-top: 32px;
+    padding-top: 0px;
   }
   .text_price {
     font-size: 17px;
@@ -1203,7 +1203,7 @@ img {
     align-items: center;
   }
   .about_more {
-    margin-top: 32px;
+    margin-top: 0px;
   }
   .faq_name {
     padding-top: 128px;
@@ -1265,6 +1265,9 @@ img {
     display: block;
     margin-top: 70px;
   }
+  .kek {
+    padding-left: 0;
+  }
 }
 @media screen and (max-width: 550px) {
   .price {
@@ -1276,7 +1279,28 @@ img {
   }
   .abt_wrapper {
     width: 100%;
+    padding-top: 0;
   }
+  .photo_div,
+  span,
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .kek1 {
+    padding-left: 0;
+  }
+  .text_one_about {
+    padding-bottom: 24px;
+  }
+  .kek1 {
+    padding-bottom: 0;
+  }
+  .text_png {
+    padding-bottom: 24px;
+    padding-top: 24px;
+  }
+  .text_one_about padding-top: 24px;
 }
 
 @media screen and (max-width: 550px) {
@@ -1392,12 +1416,7 @@ img {
     font-size: 36px;
     line-height: 48px;
   }
-  .photo_div,
-  span,
-  img {
-    width: 60%;
-    height: 60%;
-  }
+
   .text_and_img {
     flex-direction: column;
   }
@@ -1494,6 +1513,15 @@ img {
   .about_more:after {
     height: 47px;
   }
+  .call_text_b {
+    font-size: 16px;
+  }
+  .bnt_wrapper .btn_text {
+    width: 54%;
+    padding: 14px 38px;
+  }
+  .photo_div,
+  span;
 }
 
 @media screen and (max-width: 330px) {
