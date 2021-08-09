@@ -726,7 +726,7 @@ header .mnu_top li a:hover {
 
 .abt_wrapper {
   padding-top: 24px;
-  width: 90%;
+  max-width: 620px;
 }
 
 .abt_text {
@@ -747,6 +747,8 @@ header .mnu_top li a:hover {
 }
 .text_png {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   border-bottom: 1px solid #000;
   padding-bottom: 60px;
   padding-top: 40px;
@@ -776,7 +778,12 @@ header .mnu_top li a:hover {
   padding-left: 4px;
 }
 
+/* page - about */
+
+.img-about {
+  height: 275px;
 }
+
 /* page - characteristics; */
 
 .photo {
@@ -1421,7 +1428,6 @@ img {
   .footer_wrapper-mobile {
     border-bottom: none;
   }
-  .
 }
 
 @media screen and (max-width: 350px) {
