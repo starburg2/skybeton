@@ -19,9 +19,6 @@
   max-width: 1170px;
 }
 
-img:hover {
-  transform: scale(1.05);
-}
 body {
   background-color: #f7f7f7;
   background-image: url("/img/noizxe.png");
@@ -89,7 +86,7 @@ header .mnu_top li a:hover {
   background: #005bff;
   color: #fcfcfd;
   text-decoration: none;
-  padding: 11px 24px 8px 24px;
+  padding: 9px 24px 8px 24px;
   display: block;
   font-family: Mazzard;
 }
@@ -370,7 +367,7 @@ header .mnu_top li a:hover {
   display: block;
   margin-top: 64px;
   border-bottom: 1px solid #020d22;
-  padding: 14px 0;
+  padding: 13px 0;
   border-top: 1px solid #020d22;
   width: 100%;
   position: relative;
@@ -703,7 +700,7 @@ header .mnu_top li a:hover {
 /* page - price; */
 
 .title_price {
-  padding: 16px 0 64px 0;
+  padding: 16px 0 32px 0;
   width: 80%;
 }
 .text_price {
@@ -832,6 +829,9 @@ img {
   .main .car .car_text span {
     padding-left: 40px;
   }
+  .price_wrapper {
+    margin-top: 32px;
+  }
   .car img {
     max-width: 626px;
   }
@@ -840,6 +840,9 @@ img {
   }
   .block {
     width: 28%;
+  }
+  .titles {
+    font-size: 20px;
   }
 
   .num {
@@ -878,11 +881,11 @@ img {
     text-align: center;
   }
   .b {
-    font-size: 32px;
+    font-size: 26px;
   }
 
   .span_b {
-    font-size: 32px;
+    font-size: 26px;
   }
 
   .footer_tel {
@@ -914,6 +917,7 @@ img {
   .map_about-tablet {
     display: block;
     margin-top: 180px;
+    margin-left: 62px;
   }
   header .ul_wrapper .btn {
     font-size: 14px;
@@ -952,10 +956,41 @@ img {
     padding-bottom: 24px;
   }
   .call_text_b {
-    padding-top: 0px;
+    padding-top: 24px;
   }
   .text_price {
     font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .num {
+    font-size: 58px;
+  }
+  .price {
+    font-size: 15px;
+  }
+  .faq_name {
+    font-size: 42px;
+  }
+  .price_name {
+    font-size: 42px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .footer {
+    height: 120px;
+  }
+  .footer_border {
+    border-left: 1px solid #020d22;
+    border-right: 1px solid #020d22;
+    padding: 0 17px;
+  }
+  .footer_b {
+    font-size: 36px;
+  }
+  .last {
+    font-size: 26px;
   }
 }
 
@@ -1099,7 +1134,7 @@ img {
     font-weight: 500;
   }
   .num {
-    font-size: 56px;
+    font-size: 52px;
     line-height: 61px;
   }
   .subtitle {
@@ -1198,7 +1233,7 @@ img {
     align-items: center;
   }
   .about_more {
-    margin-top: 0px;
+    margin-top: 32px;
   }
   .faq_name {
     padding-top: 128px;
@@ -1235,11 +1270,11 @@ img {
     line-height: 16px;
   }
   .footer_b {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 60px;
   }
   .last {
-    font-size: 26px;
+    font-size: 24px;
     line-height: 31px;
   }
   .footer_border {
@@ -1264,6 +1299,23 @@ img {
     padding-left: 0;
   }
 }
+@media screen and (max-width: 1010px) {
+  .price {
+    font-size: 16px;
+  }
+  .metrs {
+    font-size: 16px;
+  }
+  .one_time {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 950px) {
+  footer_b {
+    font-size: 40px;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .price {
     font-size: 16px;
@@ -1344,7 +1396,7 @@ img {
     line-height: 33px;
   }
   .footer_b {
-    font-size: 40px;
+    font-size: 42px;
   }
   .car {
     display: block;
@@ -1530,6 +1582,13 @@ img {
   .call_go {
     margin-right: 0;
   }
+  .abt_text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .text_png {
+    padding-top: 0;
+  }
 }
 
 @media screen and (max-width: 350px) {
@@ -1546,6 +1605,9 @@ img {
     width: 54%;
     padding: 14px 38px;
   }
+  .subtitle_contants {
+    font-size: 34px;
+  }
 }
 
 @media screen and (max-width: 330px) {
@@ -1555,5 +1617,8 @@ img {
   }
   .titles {
     font-size: 15px;
+  }
+  .footer_b {
+    font-size: 40px;
   }
 }
