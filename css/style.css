@@ -24,6 +24,9 @@ b {
   max-width: 1170px;
 }
 
+img:hover {
+  transform: scale(1.05);
+}
 body {
   background-color: #f7f7f7;
   background-image: url("/img/noizxe.png");
@@ -571,7 +574,7 @@ header .mnu_top li a:hover {
 }
 
 .footer {
-  margin-top: 255px;
+  margin-top: 136px;
   display: flex;
   margin-bottom: 25px;
   height: 155px;
@@ -678,7 +681,9 @@ header .mnu_top li a:hover {
 .contacts_black {
   color: #020d22;
 }
-
+.map_about {
+  display: none;
+}
 .contacts_main {
   display: block;
   padding-top: 56px;
@@ -1273,13 +1278,30 @@ img {
   .price {
     font-size: 16px;
   }
+  .text_contacts {
+    font-size: 16px;
+  }
+  .contacts_wrapper_sec {
+    padding-top: 32px;
+  }
+  .subtitle_contants {
+    width: 100%;
+    font-size: 40px;
+  }
+  .info_cnt {
+    padding-top: 40px;
+  }
   .text_png {
     display: block;
     padding-top: 0;
   }
+  .map_contacts {
+    display: none;
+  }
   .abt_wrapper {
     width: 100%;
     padding-top: 0;
+    padding-bottom: 16px;
   }
   .photo_div,
   span,
@@ -1300,228 +1322,231 @@ img {
     padding-bottom: 24px;
     padding-top: 24px;
   }
-  .text_one_about padding-top: 24px;
-}
-
-@media screen and (max-width: 550px) {
-  .map_about-tablet {
-    display: none;
-  }
-
-  .subtitle_contants {
-    font-size: 40px;
-    padding-top: 104px;
-    padding-bottom: 0;
-  }
-  header .ul_wrapper .btn {
-    display: none;
-  }
-  .subtitle {
-    font-size: 32px;
-    line-height: 42px;
-  }
-  .title {
-    font-size: 32px;
-    line-height: 33px;
-  }
-  .footer_b {
-    font-size: 40px;
-  }
-  .car {
-    display: block;
-  }
-  .car img {
-    width: 100%;
-  }
-  .car_text {
+  .text_one_about {
     padding-top: 24px;
   }
-  .block_wrapper {
-    display: block;
-    padding-top: 27px;
-  }
-  .btn1 .btn {
-    margin-left: 0;
-  }
-  .block {
-    width: auto;
-    margin-top: 16px;
-  }
-  .text {
-    font-size: 17px;
-    line-height: 20px;
-  }
-  .price_name {
-    padding-top: 120px;
-    font-size: 32px;
-    line-height: 38px;
-  }
-  .price_titles {
-    margin-top: 24px;
-  }
-  .mobile-titles,
-  .one_time {
-    display: none;
-  }
-  .price_titles {
-    padding-right: 5px;
-  }
-  .titles {
-    font-size: 17px;
-    line-height: 18px;
-    width: auto;
-    font-weight: 600;
-  }
-  .span_wrapper {
-    font-size: 20px;
-    line-height: 17px;
-  }
-  .span_wrapper .num {
-    font-size: 28px;
-    line-height: 26px;
-  }
-  .map {
-    display: block;
-  }
-  .span-mobile {
-    display: block;
-    font-size: 16px;
-    line-height: 17px;
-    color: #898989;
-    padding: 4px 0 16px;
-  }
-  .subtitle_contants {
-    font-size: 32px;
-  }
-  .text_price {
-    font-size: 16px;
-  }
-  .metrs .span_wrapper:not(:first-child) {
-    padding: 17px 0 34px;
-  }
-  .price_wrapper {
-    align-items: flex-start;
-  }
-  .second_price {
-    margin-top: 64px;
-  }
-  .secod_price-wrap {
-    display: block;
-  }
-  .price-wrap {
-    max-width: 100%;
-    padding-bottom: 20px;
-  }
-  .num {
-    font-size: 36px;
-    line-height: 48px;
+
+  @media screen and (max-width: 550px) {
+    .map_about-tablet {
+      display: none;
+    }
+
+    .subtitle_contants {
+      font-size: 40px;
+      padding-top: 104px;
+      padding-bottom: 0;
+    }
+    header .ul_wrapper .btn {
+      display: none;
+    }
+    .subtitle {
+      font-size: 32px;
+      line-height: 42px;
+    }
+    .title {
+      font-size: 32px;
+      line-height: 33px;
+    }
+    .footer_b {
+      font-size: 40px;
+    }
+    .car {
+      display: block;
+    }
+    .car img {
+      width: 100%;
+    }
+    .car_text {
+      padding-top: 24px;
+    }
+    .block_wrapper {
+      display: block;
+      padding-top: 27px;
+    }
+    .btn1 .btn {
+      margin-left: 0;
+    }
+    .block {
+      width: auto;
+      margin-top: 16px;
+    }
+    .text {
+      font-size: 17px;
+      line-height: 20px;
+    }
+    .price_name {
+      padding-top: 120px;
+      font-size: 32px;
+      line-height: 38px;
+    }
+    .price_titles {
+      margin-top: 24px;
+    }
+    .mobile-titles,
+    .one_time {
+      display: none;
+    }
+    .price_titles {
+      padding-right: 5px;
+    }
+    .titles {
+      font-size: 17px;
+      line-height: 18px;
+      width: auto;
+      font-weight: 600;
+    }
+    .span_wrapper {
+      font-size: 20px;
+      line-height: 17px;
+    }
+    .span_b {
+      font-size: 21px;
+    }
+    .span_wrapper .num {
+      font-size: 28px;
+      line-height: 26px;
+    }
+    .map {
+      display: block;
+    }
+    .footer_m {
+      padding-top: 12px;
+    }
+    .span-mobile {
+      display: block;
+      font-size: 16px;
+      line-height: 17px;
+      color: #898989;
+      padding: 4px 0 16px;
+    }
+    .text_price {
+      font-size: 16px;
+    }
+    .metrs .span_wrapper:not(:first-child) {
+      padding: 17px 0 34px;
+    }
+    .price_wrapper {
+      align-items: flex-start;
+    }
+    .second_price {
+      margin-top: 64px;
+    }
+    .secod_price-wrap {
+      display: block;
+    }
+    .price-wrap {
+      max-width: 100%;
+      padding-bottom: 20px;
+    }
+    .num {
+      font-size: 36px;
+      line-height: 48px;
+    }
+
+    .text_and_img {
+      flex-direction: column;
+    }
+
+    .img img {
+      transform: rotate(90deg);
+      width: 90%;
+      height: auto;
+    }
+    .read_arrow {
+      width: 94%;
+    }
+    .main .car .car_text span {
+      padding-left: 0;
+    }
+    .about_more {
+      width: 100%;
+    }
+    .about_more:after {
+      right: 0;
+    }
+    .call_text {
+      font-size: 16px;
+    }
+    .faq_name {
+      font-size: 32px;
+      line-height: 38px;
+    }
+    .about_more {
+      font-size: 17px;
+    }
+    .block__title {
+      font-size: 17px;
+      line-height: 19px;
+    }
+    .call_text_b {
+      margin-bottom: 20px;
+    }
+    .map-mobile,
+    .ymaps-2-1-79-map.ymaps-2-1-79-i-ua_js_yes.ymaps-2-1-79-map-bg.ymaps-2-1-79-islets_map-lang-ru,
+    .ymaps-2-1-79-map {
+      width: 100% !important;
+      height: 219px !important;
+    }
+    .map-mobile {
+      margin: 24px 0 16px;
+      padding: 24px 0 16px;
+    }
+
+    .map_about-small {
+      display: none;
+    }
+    .call_text_b {
+      margin-bottom: 16px;
+    }
+    .map-mobile {
+      display: block;
+    }
+    .map_about {
+      display: none;
+    }
+    .bnt_wrapper {
+      justify-content: center;
+    }
+    .bnt_wrapper .btn_text {
+      width: 54%;
+      padding: 16px 43px;
+    }
+    .footer {
+      margin-top: 120px;
+      flex-direction: column;
+      height: auto;
+    }
+    .time_price-mobile {
+      padding-top: 15px;
+    }
+    .footer_border {
+      border: none;
+      padding: 0;
+    }
+    .footer_wrapper {
+      width: 100%;
+      border-bottom: 1px solid #000;
+    }
+    .footer_wrapper-mobile {
+      border-bottom: none;
+    }
   }
 
-  .text_and_img {
-    flex-direction: column;
+  @media screen and (max-width: 350px) {
+    .about_more {
+      font-size: 14px;
+    }
+    .about_more:after {
+      height: 47px;
+    }
+    .call_text_b {
+      font-size: 16px;
+    }
+    .bnt_wrapper .btn_text {
+      width: 54%;
+      padding: 14px 38px;
+    }
   }
-
-  .img img {
-    transform: rotate(90deg);
-    width: 90%;
-    height: auto;
-  }
-  .read_arrow {
-    width: 94%;
-  }
-  .main .car .car_text span {
-    padding-left: 0;
-  }
-  .about_more {
-    width: 100%;
-  }
-  .about_more:after {
-    right: 0;
-  }
-  .call_text {
-    font-size: 16px;
-  }
-  .faq_name {
-    font-size: 32px;
-    line-height: 38px;
-  }
-  .about_more {
-    font-size: 17px;
-  }
-  .block__title {
-    font-size: 17px;
-    line-height: 19px;
-  }
-  .call_text_b {
-    margin-bottom: 20px;
-  }
-  .map-mobile,
-  .ymaps-2-1-79-map.ymaps-2-1-79-i-ua_js_yes.ymaps-2-1-79-map-bg.ymaps-2-1-79-islets_map-lang-ru,
-  .ymaps-2-1-79-map {
-    width: 100% !important;
-    height: 219px !important;
-  }
-  .map-mobile {
-    margin: 24px 0 16px;
-    padding: 24px 0 16px;
-  }
-
-  .map_about-small {
-    display: none;
-  }
-  .call_text_b {
-    margin-bottom: 16px;
-  }
-  .map-mobile {
-    display: block;
-  }
-  .map_about {
-    display: none;
-  }
-  .bnt_wrapper {
-    justify-content: center;
-  }
-  .bnt_wrapper .btn_text {
-    width: 54%;
-    padding: 16px 43px;
-  }
-  .footer {
-    margin-top: 120px;
-    flex-direction: column;
-    height: auto;
-  }
-  .time_price-mobile {
-    padding-top: 15px;
-  }
-  .footer_border {
-    border: none;
-    padding: 0;
-  }
-  .footer_wrapper {
-    width: 100%;
-    border-bottom: 1px solid #000;
-  }
-  .footer_wrapper-mobile {
-    border-bottom: none;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .about_more {
-    font-size: 14px;
-  }
-  .about_more:after {
-    height: 47px;
-  }
-  .call_text_b {
-    font-size: 16px;
-  }
-  .bnt_wrapper .btn_text {
-    width: 54%;
-    padding: 14px 38px;
-  }
-  .photo_div,
-  span;
 }
 
 @media screen and (max-width: 330px) {
